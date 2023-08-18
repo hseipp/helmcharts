@@ -20,7 +20,7 @@ metadata:
   labels:
 {{- include "ibm-mq.labels" . | nindent 4 }}
 spec:
-  host: mq.lb.vmw.ibmfusion.eu
+  host: ceph.az.ibmlab.de
   to:
     kind: Service
     name: {{ include "ibm-mq.fullname" . }}
